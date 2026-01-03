@@ -9,6 +9,8 @@ import Dashboard from "./pages/Dashboard";
 import Trips from "./pages/Trips";
 import CreateTrip from "./pages/CreateTrip";
 import Calendar from "./pages/Calendar";
+import Community from "./pages/Community";
+import Maps from "./pages/Maps";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/trips" element={<Trips />} />
           <Route path="/trips/new" element={<CreateTrip />} />
           <Route path="/calendar" element={<Calendar />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/maps" element={<Maps />} />
           <Route path="/profile" element={<Profile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

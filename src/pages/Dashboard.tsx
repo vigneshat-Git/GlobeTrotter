@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Plus, TrendingUp, Wallet, MapPin, ArrowRight } from "lucide-react";
+import { Plus, TrendingUp, Wallet, MapPin, ArrowRight, Users, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import DashboardLayout from "@/components/layout/DashboardLayout";
@@ -87,7 +87,7 @@ const Dashboard = () => {
         </motion.div>
 
         {/* Quick Actions & Stats */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 mb-10">
           {/* Plan New Trip Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -113,13 +113,63 @@ const Dashboard = () => {
             </Link>
           </motion.div>
 
+          {/* Community Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <Link to="/community">
+              <Card variant="elevated" className="h-full bg-gradient-to-br from-secondary to-secondary/80 border-0 p-6 group">
+                <div className="flex flex-col h-full justify-between">
+                  <div className="w-12 h-12 rounded-xl bg-secondary-foreground/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Users className="w-6 h-6 text-secondary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-secondary-foreground mb-1">
+                      Community
+                    </h3>
+                    <p className="text-secondary-foreground/80 text-sm">
+                      Discover trips from around the world
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          </motion.div>
+
+          {/* Maps Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.25 }}
+          >
+            <Link to="/maps">
+              <Card variant="elevated" className="h-full bg-gradient-to-br from-accent to-accent/80 border-0 p-6 group">
+                <div className="flex flex-col h-full justify-between">
+                  <div className="w-12 h-12 rounded-xl bg-accent-foreground/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Globe className="w-6 h-6 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-accent-foreground mb-1">
+                      Travel Map
+                    </h3>
+                    <p className="text-accent-foreground/80 text-sm">
+                      Explore pinned locations worldwide
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          </motion.div>
+
           {/* Stats Cards */}
           {statsData.map((stat, index) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * (index + 2) }}
+              transition={{ delay: 0.1 * (index + 4) }}
             >
               <Card variant="default" className="p-6">
                 <div className="flex items-center gap-4">
