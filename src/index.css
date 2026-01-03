@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 98%;
+    --foreground: 20 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 20% 15%;
+
+    --primary: 15 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 80% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 30 15% 92%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 40 95% 55%;
+    --accent-foreground: 20 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 15 85% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom travel app tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(15 85% 60%) 0%, hsl(40 95% 55%) 100%);
+    --gradient-ocean: linear-gradient(135deg, hsl(210 80% 45%) 0%, hsl(190 70% 50%) 100%);
+    --gradient-sunset: linear-gradient(180deg, hsl(25 90% 65%) 0%, hsl(350 80% 55%) 100%);
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(20 20% 10% / 0.7) 100%);
+    
+    --shadow-card: 0 4px 20px -4px hsl(20 20% 15% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(20 20% 15% / 0.15);
+    --shadow-glow: 0 0 40px hsl(15 85% 60% / 0.3);
+
+    --sidebar-background: 30 25% 98%;
+    --sidebar-foreground: 20 20% 15%;
+    --sidebar-primary: 15 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 15% 92%;
+    --sidebar-accent-foreground: 20 20% 15%;
+    --sidebar-border: 30 15% 88%;
+    --sidebar-ring: 15 85% 60%;
+  }
+
+  .dark {
+    --background: 20 20% 8%;
+    --foreground: 30 15% 95%;
+
+    --card: 20 18% 12%;
+    --card-foreground: 30 15% 95%;
+
+    --popover: 20 18% 12%;
+    --popover-foreground: 30 15% 95%;
+
+    --primary: 15 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 70% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 20 15% 18%;
+    --muted-foreground: 30 10% 60%;
+
+    --accent: 40 95% 55%;
+    --accent-foreground: 20 20% 10%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 15 85% 60%;
+
+    --sidebar-background: 20 18% 10%;
+    --sidebar-foreground: 30 15% 95%;
+    --sidebar-primary: 15 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 15% 18%;
+    --sidebar-accent-foreground: 30 15% 95%;
+    --sidebar-border: 20 15% 20%;
+    --sidebar-ring: 15 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Outfit', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', system-ui, sans-serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-ocean {
+    background-image: var(--gradient-ocean);
+  }
+
+  .bg-gradient-sunset {
+    background-image: var(--gradient-sunset);
+  }
+
+  .bg-gradient-overlay {
+    background-image: var(--gradient-overlay);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+}
