@@ -1,73 +1,108 @@
-# Welcome to your Lovable project
+# 🌍 GlobeTrotter — Smart Travel Planning Made Simple
 
-## Project info
+<p align="center">
+  <img src="https://img.shields.io/badge/Product-GlobeTrotter-blueviolet?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/AI-Powered-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Travel-Tech-orange?style=for-the-badge"/>
+</p>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+<p align="center">
+  <b>An intelligent travel planning platform that helps you design, visualize, and share personalized multi-city trips — all in one place.</b>
+</p>
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+##  About the Project
 
-**Use Lovable**
+**GlobeTrotter** is a smart, user-friendly travel planning application built to remove the friction from organizing complex trips.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Instead of juggling spreadsheets, notes, and multiple websites, GlobeTrotter lets travelers:
+- Design complete multi-city itineraries,
+- Discover destinations and experiences,
+- Understand their budget impact in real time,
+- And collaborate or share trips effortlessly.
 
-Changes made via Lovable will be committed automatically to this repo.
+It turns travel planning into a creative, interactive, and enjoyable process.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+##  Key Capabilities
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🔐 Secure User Accounts
+- Email-based authentication
+- Encrypted credentials
+- Personal profiles and preferences
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🏠 Smart Dashboard
+- Snapshot of upcoming trips
+- Budget highlights and alerts
+- Popular destination inspiration
+- One-click trip creation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🧳 Flexible Trip Builder
+- Create trips with name, dates, and description
+- Add multiple cities and manage travel order
+- Assign activities to each stop
+- Rearrange plans easily
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+### 🔎 Intelligent Search
+- City discovery with popularity and cost indicators
+- Activity browsing by interest, duration, and price
+- Quick add to itinerary
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### 📅 Visual Planning Tools
+- Timeline and calendar-based itinerary views
+- Day-wise expandable layouts
+- Drag-and-drop activity ordering
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+### 💰 Real-Time Budget Tracking
+- Automatic cost calculation
+- Category-wise breakdown
+- Daily spending averages
+- Over-budget alerts
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 🤝 Sharing & Collaboration
+- Public trip sharing links
+- Read-only public views
+- Trip cloning for inspiration
+- Controlled privacy
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### ⚙️ Personalization & Settings
+- Profile editing
+- Language and preference settings
+- Saved destinations
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+### 📊 Insights & Analytics (Admin)
+- Popular destinations
+- User engagement trends
+- System usage analytics
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🧠 Smart Features
+
+- AI-assisted itinerary suggestions  
+- Smart budget optimization hints  
+- Trip health scoring (pace, cost, fatigue)  
+- Intelligent recommendations  
+
+---
+
+## 🏗️ Architecture
+
