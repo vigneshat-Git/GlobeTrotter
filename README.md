@@ -104,5 +104,3 @@ It turns travel planning into a creative, interactive, and enjoyable process.
 
 ---
 
-## 🏗️ Architecture
-
