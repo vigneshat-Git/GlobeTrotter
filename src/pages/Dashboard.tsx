@@ -155,7 +155,7 @@ const Dashboard = () => {
         </section>
 
         {/* Popular Destinations */}
-        <section>
+        <section className="mb-10">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-foreground">Popular Destinations</h2>
             <Link to="/explore">
@@ -170,6 +170,31 @@ const Dashboard = () => {
               <DestinationCard key={destination.id} destination={destination} index={index} />
             ))}
           </div>
+        </section>
+
+        {/* Featured Location Map */}
+        <section>
+          <h2 className="text-2xl font-bold text-foreground mb-6">Explore Featured Locations</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="rounded-2xl overflow-hidden shadow-lg border border-border"
+          >
+            <div className="bg-white dark:bg-slate-900 p-6">
+              <h3 className="text-xl font-semibold text-foreground mb-4">Ukkadam-Valankulam Lake</h3>
+              <div className="flex justify-center items-center w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8446.353067354208!2d76.96852764470212!3d10.992190034316684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859989ca4cf69%3A0x8d2624d40b26b574!2sUkkadam-Valankulam%20Lake!5e0!3m2!1sen!2sin!4v1767431853758!5m2!1sen!2sin"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0, borderRadius: "0.75rem" }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+          </motion.div>
         </section>
       </div>
     </DashboardLayout>
